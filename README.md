@@ -8,7 +8,6 @@
 
 - **Distro:** Arch Linux (dual boot with Windows)
 - **Boot:** UEFI
-- **Install:** Manual Archinstall with just `/` and `/home`, no extra `/boot/efi`
 - **Environment:** Wayland + Hyprland + Gnome
 
 ---
