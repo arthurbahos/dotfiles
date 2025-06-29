@@ -19,10 +19,10 @@
 | ------------ | -------------------------------- |
 | WM           | [Hyprland](w)                    |
 | Terminal     | [Kitty](w)                       |
-| Shell Prompt | Bash + Pywal (Kali-style colors) |
+| Shell Prompt | Bash + Pywal (Kali-style Prompt) |
 | Top Bar      | [Waybar](w)                      |
 | Font         | JetBrainsMono Nerd Font          |
-| App Launcher | [Rofi](w)                        |
+| App Launcher | [Rofi](w)                         |
 | Lockscreen   | [Hyprlock](w)                    |
 | Wallpaper    | Retro stripes + Arch logo        |
 
