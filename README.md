@@ -1,6 +1,6 @@
 # 🌿 Hyprland Rice - Gruvbox
 
-> Built this rice from scratch on Arch Linux with Hyprland. Think retro vibes, Gruvbox green tones, and a good dose of minimalism. No scripts, no bloat—just a clean setup tuned to my workflow. Inspired by r/unixporn, but done my way.
+> Built this rice from scratch on Arch Linux with Hyprland. Think retro vibes, Gruvbox Dark, and a good dose of minimalism. No scripts, no bloat—just a clean setup tuned to my workflow. Inspired by r/unixporn, but done my way.
 
 ---
 
