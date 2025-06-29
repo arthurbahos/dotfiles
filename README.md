@@ -4,12 +4,6 @@
 
 ---
 
-## 📸 Preview
-
-
-
----
-
 ## 🏗️ System Info
 
 - **Distro:** Arch Linux (dual boot with Windows)
