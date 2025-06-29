@@ -64,10 +64,10 @@
 
 ```bash
 # Clone it
-$ git clone https://github.com/youruser/yourrice.git ~/.dotfiles
+$ git clone https://github.com/arthur/dotfiles.git ~/.dotfiles
 
 # Copy everything (or symlink)
-$ cp -r ~/.dotfiles/* ~/.config/
+$ cp -r ~/.dotfiles/* ~/Downloads
 
 # Restart Waybar to see the magic
 $ pkill waybar && waybar &
