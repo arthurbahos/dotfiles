@@ -5,10 +5,11 @@
 }
 
 window#waybar {
-    background-color: transparent ;
+    background-color: transparent;
     color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
+    margin: 50px;
 }
 
 window#waybar.hidden {
@@ -38,7 +39,7 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 0;
+    border-radius: 2px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -53,21 +54,22 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 3px;
     background-color: transparent;
     color: #ffffff;
-    margin: 2px;
-    border-radius: 999px;
+    margin: 0 0px;
+    border-radius: 100%;
     transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
-
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: #000000;
+    box-shadow: inset 0 0px #000000;
 }
 
 #workspaces button.active{
-    background-color: #deaa79;
+    background-color: #3050b1;
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
@@ -94,11 +96,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
-}
-
+#mpd,
 #window,
 #workspaces {
     margin: 0 4px;
@@ -115,15 +113,19 @@ button:hover {
 }
 
 #clock {
-    background-color: #ffe6a9;
+    background-color: #3050b1;
     border-radius: 20px;
-    color: #000000;
+    color: #ffffff;
+    margin: 0 10px;
+    padding: 0 10px;
 }
 
 #battery {
-    background-color: #ffe6a9;
-    color: #000000;
-    border-radius: 20px
+    background-color: #3050b1;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 0 0px;
 }
 
 #battery.charging, #battery.plugged {
@@ -150,6 +152,7 @@ button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     border-radius: 20px;
+    margin: 2px;
 }
 
 #power-profiles-daemon {
@@ -193,9 +196,11 @@ label:focus {
 }
 
 #network {
-    background-color: #ffe6a9;
-    color: #000000;
+    background-color: #3050b1;
+    color: #ffffff;
     border-radius: 20px;
+    margin: 0 0px;
+    padding: 0 10px;
 }
 
 #network.disconnected {
@@ -213,9 +218,11 @@ label:focus {
 }
 
 #wireplumber {
-    background-color: #ffe6a9;
-    color: #000000;
+    background-color: #3050b1;
+    color: #ffffff;
     border-radius: 20px;
+    margin: 0 0px;
+    padding: 0 10px;
 }
 
 #wireplumber.muted {
@@ -225,7 +232,6 @@ label:focus {
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;
-    min-width: 100px;
 }
 
 #custom-media.custom-spotify {
@@ -288,7 +294,6 @@ label:focus {
     color: #740864;
     padding: 0 5px;
     margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state {
@@ -296,7 +301,6 @@ label:focus {
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state > label {
