@@ -1,6 +1,6 @@
-# 🌿 Hyprland Rice - Gruvbox
+# 🌿 Hyprland Rice - Tahoe
 
-> Built this rice from scratch on Arch Linux with Hyprland. Think retro vibes, Gruvbox Dark, and a good dose of minimalism. No scripts, no bloat—just a clean setup tuned to my workflow. Inspired by r/unixporn, but done my way.
+> Built this rice from scratch on Arch Linux with Hyprland. Cold Colors, Tahoe Dark, and a good dose of minimalism. No scripts, no bloat—just a clean setup tuned to my workflow. Inspired by r/unixporn, but done my way.
 
 ---
 
@@ -23,13 +23,13 @@
 | Font         | JetBrainsMono Nerd Font          |
 | App Launcher | [Rofi](w)                         |
 | Lockscreen   | [Hyprlock](w)                    |
-| Wallpaper    | Retro stripes + Arch logo        |
+| Wallpaper    | Blue Abstract Background        |
 
 ---
 
 ## 🎨 Theme & Aesthetic
 
-- **Base Theme:** Gruvbox Dark (customized)
+- **Base Theme:** Tahoe Dark (customized)
 - **Colors:** Generated via Pywal
 - **Waybar:**
   - All colors defined in `style.css`
@@ -44,7 +44,6 @@
 - Workspaces 1–4 always shown (even if unused)
 - Battery and volume icons change live
 - Audio icons use Nerd Font (``, ``, ``, ``)
-- Root shell uses same prompt style as user
 
 ---
 
@@ -56,8 +55,6 @@
 | System Info     | `fastfetch`      |
 | Monitor         | `btm` (Bottom)   |
 | Audio Viz       | `cava`           |
-| TUI Screenshots | `shotman`        |
-
 ---
 
 ## 🚀 How to Try This Setup
