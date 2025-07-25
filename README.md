@@ -16,13 +16,13 @@
 
 | Part         | Tool                             |
 | ------------ | -------------------------------- |
-| WM           | [Hyprland](w)                    |
-| Terminal     | [Kitty](w)                       |
+| WM           | [Hyprland]                   |
+| Terminal     | [Kitty]                       |
 | Shell Prompt | Bash + Pywal (Kali-style Prompt) |
-| Top Bar      | [Waybar](w)                      |
+| Top Bar      | [Waybar]                      |
 | Font         | JetBrainsMono Nerd Font          |
-| App Launcher | [Rofi](w)                         |
-| Lockscreen   | [Hyprlock](w)                    |
+| App Launcher | [Rofi]                         |
+| Lockscreen   | [Hyprlock]                    |
 | Wallpaper    | Blue Abstract Background        |
 
 ---
