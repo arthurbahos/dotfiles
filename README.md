@@ -16,13 +16,13 @@
 
 | Part         | Tool                             |
 | ------------ | -------------------------------- |
-| WM           | [Hyprland]                   |
-| Terminal     | [Kitty]                       |
+| WM           | Hyprland                   |
+| Terminal     | Kitty                       |
 | Shell Prompt | Bash + Pywal (Kali-style Prompt) |
-| Top Bar      | [Waybar]                      |
+| Top Bar      | Waybar                      |
 | Font         | JetBrainsMono Nerd Font          |
-| App Launcher | [Rofi]                         |
-| Lockscreen   | [Hyprlock]                    |
+| App Launcher | Rofi                         |
+| Lockscreen   | Hyprlock                    |
 | Wallpaper    | Blue Abstract Background        |
 
 ---
@@ -32,7 +32,7 @@
 - **Base Theme:** Tahoe Dark (customized)
 - **Colors:** Generated via Pywal
 - **Waybar:**
-  - All colors defined in `style.css`
+  - All colors defined in `waybar` `style.css`
   - Bubble-style module buttons
   - Workspace animation using `cubic-bezier` easing
 
