@@ -8,7 +8,7 @@
 
 - **Distro:** Arch Linux
 - **Boot:** UEFI
-- **Environment:**Hyprland
+- **Environment:** Hyprland
 
 ---
 
