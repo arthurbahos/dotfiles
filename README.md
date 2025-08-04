@@ -4,14 +4,6 @@
 
 ---
 
-## 🏗️ System Info
-
-- **Distro:** Arch Linux
-- **Boot:** UEFI
-- **Environment:** Hyprland
-
----
-
 ## 🧩 What’s in the Setup
 
 | Part         | Tool                             |
