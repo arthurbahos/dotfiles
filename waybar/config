@@ -2,38 +2,43 @@
 {
      "layer": "top", // Waybar at top layer
      //"position": "left", // Waybar position (top|bottom|left|right)
-    "height": 0, // Waybar height (to be removed for auto height)
+    //"height": 0, // Waybar height (to be removed for auto height)
      //"width": 60, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+    	"custom/ico",
         "hyprland/workspaces",
+        "custom/player",
     ],
     "modules-center": [
-        "clock"
     ],
     "modules-right": [
-        "wireplumber",
-	"network",
+        "clock",
+      "wireplumber",
+      "network",
         "battery",
     ],
     // Modules configuration
-    // "wlr/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+	 "persistent-workspaces": {
+	 "*": [1, 2, 3, 4]
+	 },
+	 "format": "{icon}",
+	 "format-icons": {
+	 "default": "󰊠",
+	 "active": "󰮯",
+	 "urgent": "",
+	// "hover": "",
+     }
+     },
+     "custom/ico": {
+     	"format": "󰣇",
+	"tooltip": false,
+	"on-click": "exec rofi -show drun",
+     },
     //"wireplumber": {
     //    "format": "{icon} {volume}%",
     //	"format-muted": "󰝟  Muted",
@@ -48,6 +53,11 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "custom/player": {
+    "format": "{}",
+    "exec": "playerctl metadata --format '{{artist}} - {{title}}'",
+    "interval": 1
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -103,7 +113,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%Y}"
+        "format-alt": " {:%d/%m/%Y}",
+	"format": " {:%H:%M}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -131,7 +142,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}%  ",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
@@ -157,13 +168,14 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": " {essid} ({signalStrength}%)",
         //"format-ethernet": "{ipaddr}/{cidr} ",
         //"tooltip-format": "{ifname} via {gwaddr} ",
         //"format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "kitty -e nmtui"
+	"on-click": "kitty -e nmtui",
+	"interval": 3,
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -186,8 +198,9 @@
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": [ "", "", "" ]
+        "format-muted": "",
+        "format-icons": [ "", "", "" ],
+	"on-click": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",
